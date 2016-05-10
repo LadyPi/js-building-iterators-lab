@@ -7,8 +7,8 @@ var myReduce = require('./myEach');
   To run it on the console do: `node index.js`
 ***********************************************************************/
 
-// var numArray = [0,1,10,100,1000];
-// 
+var numArray = [0,1,10,100,1000];
+
 
 /* myEach */
 
@@ -29,15 +29,15 @@ var myReduce = require('./myEach');
 
 /* myReduce */
 
-testArr = ['a', 'b', 'c', 'd'];
+// testArr = ['a', 'b', 'c', 'd'];
 
-it("takes a function as the second argument and calls that function (callback)", function testCallback() {
-    function spyOnMe() {
-    var spy = chai.spy(spyOnMe);
-    spy.myReduce(testArr, spy);
-    expect(spy).to.have.been.called();
-  }
-  });
+// it("takes a function as the second argument and calls that function (callback)", function testCallback() {
+//     function spyOnMe() {
+//     var spy = chai.spy(spyOnMe);
+//     spy.myReduce(testArr, spy);
+//     expect(spy).to.have.been.called();
+//   }
+//   });
 
 
 console.log("the end");

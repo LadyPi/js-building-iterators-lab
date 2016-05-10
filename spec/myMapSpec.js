@@ -6,7 +6,7 @@
 var mocha = require('mocha');
 var chai = require('chai');
 var spies = require('chai-spies');
-// chai.use(spies);
+chai.use(spies);
 
 var expect = chai.expect;
 chai.config.includeStack = false; // turn off stack trace

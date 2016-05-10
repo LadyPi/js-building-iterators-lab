@@ -3,11 +3,12 @@
 // function myMap(arr, callback) {
 
 //  CODE INSIDE HERE   //
-function myMap(array , callback) {
-	for(var i = 0; i < array.length; i++) {
-		var Value = callback(array[i]);
-		return callback;
+function myMap(arr , callback) {
+	var newArray = [];
+	for(var i = 0; i < arr.length; i++) {
+		newArray.push(callback(arr[i], i, arr));
 	}
+	return newArray;
 }
 
 /*
