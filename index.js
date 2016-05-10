@@ -7,8 +7,8 @@ var myReduce = require('./myEach');
   To run it on the console do: `node index.js`
 ***********************************************************************/
 
-var numArray = [0,1,10,100,1000];
-
+// var numArray = [0,1,10,100,1000];
+// 
 
 /* myEach */
 
@@ -16,9 +16,6 @@ var numArray = [0,1,10,100,1000];
 // myEach(numArray, function print(element, index, arr) {
 //   console.log('inside myEach', element, index, arr);
 // });
-
-
-
 
 /* myMap */
 
@@ -28,6 +25,19 @@ var numArray = [0,1,10,100,1000];
 // });
 // console.log('Testing myMap')
 // console.log(output === ["A", "B", "C"]) // assertion
+
+
+/* myReduce */
+
+testArr = ['a', 'b', 'c', 'd'];
+
+it("takes a function as the second argument and calls that function (callback)", function testCallback() {
+    function spyOnMe() {
+    var spy = chai.spy(spyOnMe);
+    spy.myReduce(testArr, spy);
+    expect(spy).to.have.been.called();
+  }
+  });
 
 
 console.log("the end");

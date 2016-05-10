@@ -3,9 +3,14 @@
 
 function myReduce(arr, callback) {
 
-//  CODE INSIDE HERE   //
 
+//  CODE INSIDE HERE   //
+for(var i = 0; i < arr.length; i++) {
+	var eachIndex = callback(arr[i]);
+	return eachIndex;
 }
+};
+
 
 /*
  Best if you don't code out here.
